@@ -1232,9 +1232,11 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     font-size: 40px;
     font-size: 4rem;
-    margin-top: 70px;
+    margin: 70px auto 0 auto;
     position: relative;
     text-align: center;
+    width: 90%;
+    display: block;
     color: #444444;
     color: #fff;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
