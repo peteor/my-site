@@ -1,0 +1,1443 @@
+@charset "CP850";
+/*------------------------------------*\
+ STYLES MASTER
+ - Mobile first, responsive sheet for HTML5/CSS3 
+\*------------------------------------*/
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+  color: #888;
+  font-family: "Verdana", "sans-serif";
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background: transparent;
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/**
+ * List padding remover
+ */
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1;
+}
+
+/*------------------------------------*\
+ FONTS
+\*------------------------------------*/
+@font-face {
+  font-family: 'fontello';
+  src: url("fonts/fontello/fontello.eot?7665768");
+  src: url("fonts/fontello/fontello.eot?7665768#iefix") format("embedded-opentype"), url("fonts/fontello/fontello.woff?7665768") format("woff"), url("fonts/fontello/fontello.ttf?7665768") format("truetype"), url("fonts/fontello/fontello.svg?7665768#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('fonts/fontello/fontello.svg?7665768#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; 
+  */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-menu:before {
+  content: '\e800';
+}
+
+/* '├« Ôé¼' */
+.icon-github:before {
+  content: '\e803';
+}
+
+/* '├« ãÆ' */
+.icon-github-circled-alt:before {
+  content: '\e802';
+}
+
+/* '├« ÔÇÜ' */
+.icon-github-circled-alt2:before {
+  content: '\e804';
+}
+
+/* '├« ÔÇ×' */
+.icon-twitter-circled:before {
+  content: '\e801';
+}
+
+/* '├« ┬ü' */
+.icon-gplus-circled:before {
+  content: '\e806';
+}
+
+/* '├« ÔÇá' */
+.icon-linkedin-circled:before {
+  content: '\e805';
+}
+
+/* '├« ÔÇª' */
+.icon-flight:before {
+  content: '\e807';
+}
+
+/* '├« ÔÇí' */
+/*------------------------------------*\
+ 	VARIABLES
+\*------------------------------------*/
+/* Breakpoint widths */
+/* Colors */
+/* Fonts */
+/* Colours */
+/*------------------------------------*\
+  HTML ELEMENTS
+ - All base cascading styles should be here
+ - Avoid defining anything that will be overwritten later
+\*------------------------------------*/
+/*------------------------------------*\
+ HTML ELEMENTS
+\*------------------------------------*/
+body {
+  background-color: white;
+  color: #444444;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #e74c3c;
+}
+
+/* Paragraphs */
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  /* For IE8 */
+}
+
+/*------------------------------------*\
+ 	VERTICAL RYTHM
+
+	- Font sizing and vertical rythm have been inspired by these posts:
+
+	- Web Typography and the golden ratio: 
+	- http://gregrickaby.com/using-the-golden-ratio-and-rems/
+	- Font sizing with REM
+	- http://snook.ca/archives/html_and_css/font-size-with-rem
+
+	- Basically use REMS with px fallback. 
+	- @include font-size(12) - 12px
+
+	- Line heights should be unitless
+
+\*------------------------------------*/
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+}
+
+body {
+  font-size: 16px;
+}
+
+body {
+  text-rendering: optimizelegibility;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-text-size-adjust: none;
+  -moz-font-smoothing: antialiased;
+  -ms-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-text-size-adjust: none;
+  -ms-font-smoothing: antialiased;
+}
+
+/**
+ * Header size resets 
+ * We want to be able to mark up headings semantcally without having an effect on their size,
+ * so we reset the size + margins + padding here 
+ */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 16px;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+/* Headings */
+.headerSize-h1 {
+  font-size: 30px;
+  font-size: 3rem;
+}
+
+.headerSize-h2 {
+  font-size: 26px;
+  font-size: 2.6rem;
+}
+
+.headerSize-h3 {
+  font-size: 24px;
+  font-size: 2.4rem;
+}
+
+.headerSize-h4 {
+  font-size: 22px;
+  font-size: 2.2rem;
+}
+
+.headerSize-h5 {
+  font-size: 20px;
+  font-size: 2rem;
+}
+
+.headerSize-h6 {
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+/*------------------------------------*\
+ HELPER MIXINS
+\*------------------------------------*/
+/* Hide text @include hide-text */
+/*------------------------------------*\
+ FIXER CLASSES
+\*------------------------------------*/
+/* listReset */
+.listReset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.listReset li {
+  margin: 0;
+  padding: 0;
+}
+
+.text-align--left {
+  text-align: left;
+}
+
+.clear-both {
+  clear: both;
+}
+
+@media all and (max-device-width: 0) {
+  /*------------------------------------*\
+   	FEATUREPHONE STYLES
+   	- The styles are to provide a basic, one column layout which can be consumed by basic devices
+   	- RULES
+   	- 1 column - consider phones with 300px wide displays
+   	- CSS2 rules, HTML 4 considerations, no JS
+   	- NO MEDIA QUERIES
+   	- todo - test on featurephone, perhaps slim down  CSS complexity
+  \*------------------------------------*/
+  .visibility-featurePhone-only {
+    display: block;
+  }
+
+  /* Header */
+  .header {
+    height: 50px;
+    background: #efefef;
+    margin-bottom: 1em;
+  }
+
+  /* Navigation links */
+  .btn-launchNav {
+    color: #444444;
+    position: absolute;
+    width: 50px;
+    line-height: 50px;
+    font-size: 9px;
+    font-size: 0.9rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .site-title {
+    font-size: 18px;
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+  }
+
+  .site-title a {
+    color: #e74c3c;
+  }
+
+  .site-title strong {
+    color: #444444;
+  }
+
+  .site-strapline {
+    text-align: center;
+    font-family: monospace;
+    margin: 1.5em;
+    font-size: 20px;
+    font-size: 2rem;
+  }
+
+  /* Find out more */
+  .findOutMore-container {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    position: relative;
+  }
+
+  .findOutMore-item {
+    display: block;
+    margin-bottom: 10px !important;
+  }
+
+  .findOutMore-item a {
+    line-height: 2em;
+    display: block;
+    background: #efefef;
+    color: #e74c3c;
+  }
+
+  /* Navigation */
+  .nav {
+    list-style: none;
+    margin: 1em 0  0 0;
+    padding: 0;
+  }
+
+  .nav li {
+    margin: 0;
+    padding: 0;
+    display: inline;
+  }
+
+  .nav a {
+    width: 50%;
+    line-height: 3em;
+    border-top: 1px solid #798d8f;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: bold;
+    background: #efefef;
+    color: #e74c3c;
+  }
+
+  .nav a:active,
+  .nav a:hover {
+    background: #95a5a6;
+  }
+
+  .nav .nav-item-fullWidth {
+    width: 100%;
+  }
+
+  /*
+  	Section controls the default margin for the page body, since we can't rely on border box
+  */
+  .section {
+    width: 96%;
+    margin: auto;
+  }
+
+  /* 
+  	Languages boxout 
+  */
+  .lanuages-card {
+    display: none;
+  }
+
+  /* 
+  	Call to action 
+  */
+  .cta-container a {
+    color: #e74c3c;
+    display: block;
+    background: #efefef;
+    padding: 1.1em;
+  }
+
+  .cta-container a:hover {
+    background: #95a5a6;
+  }
+
+  .copyNotice, .pbIcon {
+    margin: auto;
+    text-align: center;
+  }
+
+  /* Expeirience list */
+  .exp-item {
+    display: block;
+    background: #efefef;
+    padding: 10px;
+    white-space: pre;
+    margin-bottom: 1em;
+  }
+}
+@media (min-width: 0) and (max-width: 768px) {
+  /*------------------------------------*\
+    SMARTPHONE SEPCIFIC STYLES
+    Styles for your standard smartphone
+    Styles set here are not! inherited up the chain
+  
+    RULES - we are targeting decent browsers so can use
+    CSS 3
+    Box sizing - border box
+  
+    Not loading fonts in 'fo speed
+  
+    Credits
+    Menu adapted from http://codepen.io/jetpacmonkey/pen/ktIJz
+  
+  \*------------------------------------*/
+  /* 
+    Hide elements meant for other screen sizes 
+  */
+  #nav-featurePhone,
+  .header-nav,
+  .btn-launchNav {
+    display: none;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* SASS VARS */
+  /* 
+    No Hero img on smartphone
+  */
+  .site-strapline {
+    background: #3B3B3B;
+    padding: 1.5em;
+    font-size: 20px;
+    font-size: 2rem;
+    margin-bottom: 1em;
+    color: #fff;
+    border-bottom: 1px solid #444;
+  }
+
+  /* 
+    Find out more
+    Follow icons
+  */
+  .findOutMore-container {
+    width: 75%;
+    text-align: center;
+    margin: 0 auto 1em auto;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .findOutMore-item {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    text-indent: -20000px;
+    background-size: 60px 60px;
+  }
+
+  .findOutMore-item-first {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  .findOutMore-item-last {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  .findOutMore-item a {
+    line-height: 2em;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: none;
+  }
+
+  .follow-twitter {
+    background-image: url(../img/follow-icons/twitter-sociocon.svg);
+  }
+
+  .follow-github {
+    background-image: url(../img/follow-icons/linkedin-sociocon.svg);
+  }
+
+  .follow-googleplus {
+    background-image: url(../img/follow-icons/google-sociocon.svg);
+  }
+
+  /* 
+    Call to action 
+  */
+  .cta-container a {
+    color: #e74c3c;
+    display: block;
+    background: #444;
+    padding: 1.1em;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .cta-container a:hover {
+    background: #95a5a6;
+  }
+
+  .copyNotice, .pbIcon {
+    margin: auto;
+    text-align: center;
+  }
+
+  /* Expeirience list */
+  .exp-item {
+    display: block;
+    background: #efefef;
+    padding: 10px;
+    white-space: pre;
+    margin-bottom: 1em;
+  }
+
+  .section, .section-copyContainer {
+    width: 94%;
+    margin: auto;
+  }
+
+  /* pb Icon*/
+  .pbIcon {
+    background: url(../img/pb-icon.png) no-repeat;
+    height: 72px;
+    width: 72px;
+    margin: 1em auto;
+    border-radius: 50%;
+    border: 4px solid rgba(100, 100, 100, 0.7);
+  }
+
+  .pbIcon-p, .pbIcon-b {
+    display: none;
+  }
+
+  footer {
+    background: #444;
+    color: #fff;
+    padding: 1em;
+  }
+
+  /* 
+    Off canvas Nav 
+  */
+  html,
+  body {
+    min-height: 100%;
+  }
+
+  /* Header */
+  .site-title {
+    font-size: 18px;
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+  }
+
+  .site-title a {
+    color: #e74c3c;
+  }
+
+  .site-title strong {
+    color: #fff;
+  }
+
+  .header {
+    height: 50px;
+    background: #3B3B3B;
+    border-bottom: 1px solid #444;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+    transition: all 0.3s ease;
+  }
+  .header .toggle-menu {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .header .toggle-menu:active {
+    color: #fff;
+  }
+
+  .container {
+    float: right;
+    width: 100%;
+    transition: width 0.3s ease;
+    padding-top: 50px;
+  }
+
+  .main-nav-check {
+    display: none;
+  }
+
+  .nav-offcanvas {
+    background: #3B3B3B;
+    border-right: 1px solid #444;
+    position: fixed;
+    top: 50px;
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    transition: width 0.3s ease;
+  }
+  .nav-offcanvas .current a {
+    color: #e74c3c;
+  }
+  .nav-offcanvas a {
+    display: block;
+    background: linear-gradient(#3e3e3e, #383838);
+    border-top: 1px solid #484848;
+    border-bottom: 1px solid #2E2E2E;
+    color: #fff;
+    padding: 15px;
+  }
+  .nav-offcanvas a:hover, .nav-offcanvas a:focus {
+    background: linear-gradient(#484848, #383838);
+  }
+  .nav-offcanvas a:focus {
+    color: #e74c3c !important;
+  }
+  .nav-offcanvas:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 34px;
+    background: linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+  }
+
+  .close-menu {
+    display: none;
+  }
+
+  #main-nav-check:checked ~ .nav-offcanvas {
+    width: 70%;
+    z-index: 30;
+  }
+
+  #main-nav-check:checked ~ .container {
+    width: 100%;
+  }
+  #main-nav-check:checked ~ .container .open-menu {
+    display: none;
+  }
+  #main-nav-check:checked ~ .container .close-menu {
+    display: block;
+  }
+  #main-nav-check:checked ~ .container .header {
+    width: 100%;
+  }
+  #main-nav-check:checked ~ .container .toggle-menu {
+    color: #e74c3c;
+  }
+}
+@media (min-width: 768px) {
+  /*------------------------------------*\
+  	 TABLET
+  \*------------------------------------*/
+  /*
+  	HTML Tags
+  */
+  body {
+    font-family: "Lora", serif;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /*------------------------------------*/
+  /* 
+  	Hide elements meant for other screen sizes 
+  */
+  .visibility-featurePhone-only,
+  .nav-offcanvas,
+  .btn-launchNav,
+  .toggle-menu,
+  .main-nav-check,
+  #nav-featurePhone {
+    display: none !important;
+  }
+
+  /* 
+  	Layout
+  */
+  /* 
+  	Section
+  	Section classes are used to create bounding for copy,
+  	whilst allowing full width backgorunds to be set behind 
+  */
+  .section {
+    position: relative;
+    max-width: 830px;
+    width: 85%;
+    margin: auto;
+  }
+
+  /* 
+  	Section-copyContainer
+  	Similar to a section, but adds a padding at the top so that headings do not butt up against copy
+  */
+  .section-copyContainer {
+    width: 85%;
+    max-width: 830px;
+    padding-top: 54px;
+    margin: auto;
+  }
+
+  /*
+  	Header
+  */
+  .header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    border-top: 4px solid #f5b4ae;
+    -webkit-transition: all 0.6s ease-in-out 0s;
+    -moz-transition: all 0.6s ease-in-out 0s;
+    -o-transition: all 0.6s ease-in-out 0s;
+    transition: all 0.6s ease-in-out 0s;
+  }
+
+  .header-hasBackground {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  /* 
+  	Nav 
+  */
+  .header-nav {
+    font-family: "Montserrat", sans-serif;
+    z-index: 105;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 54px;
+  }
+
+  .header-nav li {
+    display: inline-block;
+  }
+
+  .header-nav a {
+    margin-right: 1em;
+    padding: 0 10px;
+    display: block;
+    text-align: center;
+    color: #444444;
+    font-weight: bold;
+  }
+
+  .header-nav a:active {
+    top: 5px;
+  }
+
+  .header-nav a:active,
+  .header-nav a:hover,
+  .current a {
+    color: #e74c3c;
+  }
+
+  /* 
+  	Site title/logo
+  */
+  .site-title {
+    display: block;
+    position: relative;
+    margin: 0;
+    font-size: 26px;
+    font-size: 2.6rem;
+    font-family: "Montserrat", sans-serif;
+    line-height: 54px;
+  }
+
+  .site-title a {
+    color: #e74c3c;
+  }
+
+  .site-title a:hover {
+    border-bottom: 1px solid #efefef;
+  }
+
+  .site-title strong {
+    color: #444444;
+  }
+
+  .site-strapline {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 40px;
+    font-size: 4rem;
+    margin-top: 70px;
+    position: relative;
+    text-align: center;
+    color: #444444;
+    color: #fff;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+  }
+
+  /* 
+  	Hero Image
+  	The height of this is set by the elements inside
+  */
+  .heroImgContainer {
+    background: #efefef url(../img/hk-skyline.jpg) center no-repeat;
+    width: 100%;
+    padding: 1px 0;
+    /* padding to stop margin collapsing */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  /* 
+  	Find out more
+  	Follow icons
+  */
+  .findOutMore-container {
+    width: 60%;
+    text-align: center;
+    margin: 70px auto 100px auto;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .findOutMore-item {
+    width: 128px;
+    height: 128px;
+    display: inline-block;
+    text-indent: -20000px;
+    background-size: 128px 128px;
+  }
+
+  .follow-twitter {
+    background-image: url(../img/follow-icons/twitter-sociocon.svg);
+  }
+
+  .follow-github {
+    background-image: url(../img/follow-icons/linkedin-sociocon.png);
+  }
+
+  .follow-googleplus {
+    background-image: url(../img/follow-icons/google-sociocon.png);
+  }
+
+  .findOutMore-item-first {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  .findOutMore-item-last {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  .findOutMore-item a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* 
+  	Home page spiel
+   */
+  .pGrid-four {
+    width: 100%;
+    padding-top: 60px;
+  }
+
+  /* 
+  	Full width modifier 
+  */
+  .pGrid-four-fullWidth {
+    max-width: 830px;
+    width: 100%;
+    margin: auto;
+    display: block;
+  }
+  .pGrid-four-fullWidth .pGrid-four-inner {
+    width: 100%;
+    display: block;
+    margin-left: 0;
+    float: left;
+    margin-bottom: 50px;
+    -webkit-transition: all 0.6s ease-in-out 0s;
+    -moz-transition: all 0.6s ease-in-out 0s;
+    -o-transition: all 0.6s ease-in-out 0s;
+    transition: all 0.6s ease-in-out 0s;
+  }
+
+  /*
+  	Dev img photo 
+   */
+  .dev-img {
+    width: 280px;
+    height: 280px;
+    float: right;
+    margin-left: 60px;
+    position: relative;
+    background: url(../img/dev-img.gif);
+    margin-bottom: 2em;
+  }
+
+  /* 
+  	Call to action breakout
+  */
+  .cta-container {
+    clear: both;
+    -webkit-transition: all 0.6s ease-in-out 0s;
+    -moz-transition: all 0.6s ease-in-out 0s;
+    -o-transition: all 0.6s ease-in-out 0s;
+    transition: all 0.6s ease-in-out 0s;
+  }
+
+  .cta-container a {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 20px;
+    font-size: 2rem;
+    color: #fff;
+    display: block;
+    width: 100%;
+    background: #444444;
+    padding: 0.8em;
+    border: 4px solid rgba(100, 100, 100, 0.8);
+  }
+
+  .cta-container a:hover {
+    background: #2ecc71;
+    border: 4px solid rgba(100, 100, 100, 0.8);
+  }
+
+  .animate-in {
+    -webkit-transform: translateY(40px);
+    -moz-transform: translateY(40px);
+    -o-transform: translateY(40px);
+    -ms-transform: translateY(40px);
+    transform: translateY(40px);
+    opacity: 0;
+  }
+
+  /* 
+  	Experience list
+  */
+  .exp-item {
+    background: #ecf0f1;
+    display: block;
+    float: left;
+    margin-right: 1em;
+    padding: 0.3em 1em;
+  }
+
+  /*
+  	Footer
+  */
+  .footer {
+    height: 150px;
+    margin-top: 60px;
+    padding-top: 1px;
+    background-color: #444444;
+    border-top: 1px solid #5e5e5e;
+  }
+
+  .copyNotice {
+    text-align: center;
+    color: #fff;
+    margin: 0;
+  }
+
+  /* pb Icon*/
+  .pbIcon {
+    background: url(../img/pb-icon.png) no-repeat;
+    height: 72px;
+    width: 72px;
+    margin: 1em auto;
+    border-radius: 50%;
+    border: 4px solid rgba(100, 100, 100, 0.7);
+  }
+
+  .pbIcon-p, .pbIcon-b {
+    display: none;
+  }
+}
+/* 
+	Turn off fancy stuff for now
+	// Responsive nav 
+
+@media (min-width: $breakpoint-tablet) { 
+	@import "partials/tablet";
+}
+@media (min-width: $breakpoint-laptop) { 
+	@import "partials/laptop";
+}
+@media (min-width: $breakpoint-desktop) { 
+	@import "partials/desktop";
+}
+*/

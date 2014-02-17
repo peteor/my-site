@@ -1,0 +1,13 @@
+<svg width="231" height="231" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="233" width="233" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="in">
+   <circle id="svg_7" r="115.713997" cy="115.713977" cx="115.713989" fill="#1C75BC"/>
+   <text x="-293.618011" y="-272.861023" id="svg_8" font-size="157.1195" font-family="'Montserrat-Bold'" fill="#FFFFFF" transform="matrix(1 0 0 1 338.567 432.706)">in</text>
+  </g>
+ </g>
+</svg>
